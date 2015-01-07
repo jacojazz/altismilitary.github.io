@@ -1,0 +1,7 @@
+_group = _this select 0;
+_wps = waypoints _group; 
+_wp = _wps select ((count _wps)-1);
+_wppos = waypointPosition _wp;
+_radius=waypointCompletionRadius _wp;
+{dostop _x;_x disableai "TARGET";[_x,_radius,true,vts_buildingpatroldelay,_wppos] execVM "functions\crB_HousePos.sqf";} foreach units _group;
+

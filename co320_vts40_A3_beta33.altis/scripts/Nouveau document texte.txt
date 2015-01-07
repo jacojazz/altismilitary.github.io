@@ -1,0 +1,42 @@
+// create area trigger =========================================================================================================================
+	if (_areatrigger!="NOTRIGGER") then {
+		_trgside = switch (side _npc) do { case west: {"WEST"}; case east: {"EAST"}; case resistance: {"GUER"}; case civilian: {"CIV"};};
+		//_trgside = switch (side _npc) do { case west: {"EAST"}; case east: {"WEST"}; case resistance: {"ANY"}; case civilian: {"ANY"};};
+		_trgname="UPSMON_Trig_"+_trgside+"_"+_areamarker;
+		_flgname="UPSMON_Cleared_"+_areamarker;
+		// has the trigger been created already?
+		UPSMON_TRGFlag=-1;
+		call compile format["%1=false",_flgname];
+		call compile format["UPSMON_TRGFlag='%1'",_trgname];
+		if (isNil ("UPSMON_TRGFlag")) then 
+		{
+			// trigger doesn't exist yet, so create one (make it a bit bigger than the marker, to catch path finding 'excursions' and flanking moves)
+			call compile format["%1=createTrigger['EmptyDetector',_centerpos]",_trgname];
+			call compile format["%1 setTriggerArea[_rangeX*1.5,_rangeY*1.5,markerDir _areamarker,true]",_trgname];
+			call compile format["%1 setTriggerActivation[_trgside,'PRESENT',true]",_trgname];
+			call compile format["%1 setEffectCondition 'true'",_trgname];
+			call compile format["%1 setTriggerTimeout [5,7,10,true]",_trgname];
+			if (_areatrigger!="SILENTTRIGGER") then {
+				call compile format["%1 setTriggerStatements['count thislist<=%6', 'titletext [''SECTOR <%2> LIMPIO'',''PLAIN''];''%2'' setmarkerpos [-%4,-%5];%3=true;', 'titletext [''SECTOR <%2> HA SIDO REOCUPADO'',''PLAIN''];''%2'' setmarkerpos [%4,%5];%3=false;']", _trgname,_areamarker,_flgname,_centerX,_centerY,_zoneempty];
+				
+			} else {
+				call compile format["%1 setTriggerStatements['count thislist<=%3', '%2=true;', '%2=false;']", _trgname,_flgname,_zoneempty];
+			};
+		};
+		sleep .05;
+	};
+
+groupName addVehicle vehicleName
+
+groupOne leaveVehicle jeepOne
+
+
+RUBE_average = compile preprocessFileLineNumbers "RUBE\fn\fn_average.sqf";
+RUBE_arrayMin = compile preprocessFileLineNumbers "RUBE\fn\fn_arrayMin.sqf";
+RUBE_arrayMax = compile preprocessFileLineNumbers "RUBE\fn\fn_arrayMax.sqf";
+RUBE_arrayMap = compile preprocessFileLineNumbers "RUBE\fn\fn_arrayMap.sqf";
+RUBE_getPosASL = compile preprocessFileLineNumbers "RUBE\fn\fn_getPosASL.sqf";
+RUBE_getALD = compile preprocessFileLineNumbers "RUBE\fn\fn_getALD.sqf";
+
+RUBE_samplePeriphery = compile preprocessFileLineNumbers "RUBE\fn\fn_samplePeriphery.sqf";
+RUBE_analyzePeriphery = compile preprocessFileLineNumbers "RUBE\fn\fn_analyzePeriphery.sqf";

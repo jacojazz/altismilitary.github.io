@@ -1,0 +1,133 @@
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT START (by Letranger, v1.063, #Cybufe)
+////////////////////////////////////////////////////////
+
+class head: RscButton
+{
+	idc = 1600;
+	text = "head"; //--- ToDo: Localize;
+	x = 0.470826 * safezoneW + safezoneX;
+	y = 0.191958 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class spine3: RscButton
+{
+	idc = 1601;
+	text = "spine3"; //--- ToDo: Localize;
+	x = 0.470826 * safezoneW + safezoneX;
+	y = 0.289972 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class spine1: RscButton
+{
+	idc = 1602;
+	text = "spine1"; //--- ToDo: Localize;
+	x = 0.470826 * safezoneW + safezoneX;
+	y = 0.401987 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class leftarm: RscButton
+{
+	idc = 1603;
+	text = "leftarm"; //--- ToDo: Localize;
+	x = 0.558348 * safezoneW + safezoneX;
+	y = 0.289972 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class rightarm: RscButton
+{
+	idc = 1604;
+	text = "rightarm"; //--- ToDo: Localize;
+	x = 0.383305 * safezoneW + safezoneX;
+	y = 0.289972 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class leftforearm: RscButton
+{
+	idc = 1605;
+	text = "leftforearm"; //--- ToDo: Localize;
+	x = 0.587521 * safezoneW + safezoneX;
+	y = 0.401987 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class rightforearm: RscButton
+{
+	idc = 1606;
+	text = "rightforearm"; //--- ToDo: Localize;
+	x = 0.354131 * safezoneW + safezoneX;
+	y = 0.401987 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class rightupleg: RscButton
+{
+	idc = 1607;
+	text = "rightupleg"; //--- ToDo: Localize;
+	x = 0.514587 * safezoneW + safezoneX;
+	y = 0.514002 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class leftupleg: RscButton
+{
+	idc = 1608;
+	text = "leftupleg"; //--- ToDo: Localize;
+	x = 0.427065 * safezoneW + safezoneX;
+	y = 0.514002 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class leftleg: RscButton
+{
+	idc = 1609;
+	text = "leftleg"; //--- ToDo: Localize;
+	x = 0.427065 * safezoneW + safezoneX;
+	y = 0.612015 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class leftfoot: RscButton
+{
+	idc = 1610;
+	text = "leftfoot"; //--- ToDo: Localize;
+	x = 0.427065 * safezoneW + safezoneX;
+	y = 0.710028 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class rightleg: RscButton
+{
+	idc = 1611;
+	text = "rightleg"; //--- ToDo: Localize;
+	x = 0.514587 * safezoneW + safezoneX;
+	y = 0.612015 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class rightfoot: RscButton
+{
+	idc = 1612;
+	text = "rightfoot"; //--- ToDo: Localize;
+	x = 0.514587 * safezoneW + safezoneX;
+	y = 0.710028 * safezoneH + safezoneY;
+	w = 0.0583476 * safezoneW;
+	h = 0.0700095 * safezoneH;
+};
+class picture: RscPicture
+{
+	idc = 1200;
+	text = "#(argb,8,8,3)color(1,1,1,1)";
+	x = 0.339544 * safezoneW + safezoneX;
+	y = 0.149953 * safezoneH + safezoneY;
+	w = 0.320912 * safezoneW;
+	h = 0.672091 * safezoneH;
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT END
+////////////////////////////////////////////////////////

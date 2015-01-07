@@ -1,0 +1,20 @@
+animcargoshoot =Heli_Light_Cargo01_Shooting_H;
+
+// Point de perso aimingDefault[] = {"head", 0.6, "neck1", 0.6, "neck", 0.6, "weapon", 1, "launcher", 1, "LeftShoulder", 0.8, "LeftArm", 0.8, "LeftArmRoll", 1, "LeftForeArm", 1, "LeftForeArmRoll", 1, "LeftHand", 1, "LeftHandRing", 1, "LeftHandPinky1", 1, "LeftHandPinky2", 1, "LeftHandPinky3", 1, "LeftHandRing1", 1, "LeftHandRing2", 1, "LeftHandRing3", 1, "LeftHandMiddle1", 1, "LeftHandMiddle2", 1, "LeftHandMiddle3", 1, "LeftHandIndex1", 1, "LeftHandIndex2", 1, "LeftHandIndex3", 1, "LeftHandThumb1", 1, "LeftHandThumb2", 1, "LeftHandThumb3", 1, "RightShoulder", 0.8, "RightArm", 0.8, "RightArmRoll", 1, "RightForeArm", 1, "RightForeArmRoll", 1, "RightHand", 1, "RightHandRing", 1, "RightHandPinky1", 1, "RightHandPinky2", 1, "RightHandPinky3", 1, "RightHandRing1", 1, "RightHandRing2", 1, "RightHandRing3", 1, "RightHandMiddle1", 1, "RightHandMiddle2", 1, "RightHandMiddle3", 1, "RightHandIndex1", 1, "RightHandIndex2", 1, "RightHandIndex3", 1, "RightHandThumb1", 1, "RightHandThumb2", 1, "RightHandThumb3", 1, "Spine", 0.3, "Spine1", 0.4, "Spine2", 0.5, "Spine3", 0.6}
+//test setobjecttexture [0,"#(argb,512,512,1)r2t(render01,1.0)"];
+//awesome
+//Camera = "camera"  camcreate position player;
+//camera cameraEffect ["INTERNAL", "BACK", "render01"];
+//gauche
+//camera attachTo [player,[-.25,0,.25],"head"];
+//droite
+//camera attachTo [player,[0.20,0,.15],"head"]; //[0.21,-0.10,.15]
+//camera cameraEffect["terminate","FRONT"];
+//Fov
+//camera camsetfov .6;camera camcommit 0
+
+_object = nearestObjects [[(position player select 0)+2*sin(direction player),(position player select 1)+2*cos(direction player),position player select 2],["AllVehicles"],20];
+lol attachto [player,[-0.075,0,-0.05],"leftshoulder"]
+lol attachto [player,[0,0,-0.25],"spine3"]
+Throw
+Put

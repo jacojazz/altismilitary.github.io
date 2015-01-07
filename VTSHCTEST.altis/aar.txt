@@ -1,0 +1,58 @@
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT START (by Letranger, v1.063, #Kycexy)
+////////////////////////////////////////////////////////
+
+class TIME: RscSlider
+{
+	idc = 1900;
+	x = 0.310395 * safezoneW + safezoneX;
+	y = 0.794013 * safezoneH + safezoneY;
+	w = 0.393798 * safezoneW;
+	h = 0.0420019 * safezoneH;
+};
+class RscText_1000: RscText
+{
+	idc = 1000;
+	text = "01:30"; //--- ToDo: Localize;
+	x = 0.718777 * safezoneW + safezoneX;
+	y = 0.794013 * safezoneH + safezoneY;
+	w = 0.0583404 * safezoneW;
+	h = 0.0280013 * safezoneH;
+};
+class RscFrame_1800: RscFrame
+{
+	idc = 1800;
+	x = 0.208298 * safezoneW + safezoneX;
+	y = 0.780013 * safezoneH + safezoneY;
+	w = 0.583404 * safezoneW;
+	h = 0.0700031 * safezoneH;
+};
+class STOP: RscButton
+{
+	idc = 1600;
+	text = "STP"; //--- ToDo: Localize;
+	x = 0.21559 * safezoneW + safezoneX;
+	y = 0.794013 * safezoneH + safezoneY;
+	w = 0.0291702 * safezoneW;
+	h = 0.0420019 * safezoneH;
+};
+class PLAY: RscButton
+{
+	idc = 1601;
+	text = "PLY"; //--- ToDo: Localize;
+	x = 0.259346 * safezoneW + safezoneX;
+	y = 0.794013 * safezoneH + safezoneY;
+	w = 0.0291702 * safezoneW;
+	h = 0.0420019 * safezoneH;
+};
+class BKG: IGUIBack
+{
+	idc = 2200;
+	x = 0.208298 * safezoneW + safezoneX;
+	y = 0.780013 * safezoneH + safezoneY;
+	w = 0.583404 * safezoneW;
+	h = 0.0700031 * safezoneH;
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT END
+////////////////////////////////////////////////////////

@@ -1,0 +1,23 @@
+author = "Jason1"
+onloadname = "Altis Military Training Facility";
+OnLoadMission = "Five Star training facilities courtasy of Altis Military";
+
+respawn="BASE";
+respawnDelay=10;
+disabledAI=1;
+class Header
+{
+	gameType=COOP;
+	minPlayers=1;
+	maxPlayers=60;
+};
+
+
+#include "taw_vd\dialog.hpp"
+
+class CfgFunctions
+{
+	#include "taw_vd\CfgFunctions.hpp"
+};
+
+
