@@ -3,7 +3,7 @@ echo Generatin VTS for all island
 
 set file=VTSHCTEST
 set ver=
-set ext=.Panthera3.pbo
+set ext=.altis.pbo
 
 copy %file%%ver%%ext% %file%%ver%.stratis.pbo
 copy %file%%ver%%ext% %file%%ver%.zargabad.pbo
